@@ -33,3 +33,17 @@ text-align: center;
     width: 200px;
     height: 100%;
 }
+
+@media screen and (max-width: 600px) {
+    .navi-list {
+      float: none;
+      display: block;
+    }
+  
+    .navi-list li:not(.centered-logo) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }

@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zumba By Davey</title>
         <link rel="stylesheet" href="css/classes.css">
+        <script src="https://momentjs.com/downloads/moment.js"></script>
     </head>
     <body>
         <header>
@@ -30,8 +31,7 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-date">
-                        <div class="date">25</div>
-                        <div class="month">April</div>
+                        <div id="id1">tues1</div>
                     </div>
                 </div>
 
@@ -47,8 +47,7 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-date">
-                        <div class="date">29</div>
-                        <div class="month">April</div>
+                        <div id="id2">sat1</div>
                     </div>
                 </div>
 
@@ -64,8 +63,7 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-date">
-                        <div class="date">2</div>
-                        <div class="month">May</div>
+                        <div id="id3">tues2</div>
                     </div>
                 </div>
 
@@ -78,6 +76,43 @@
                     </div>
                 </div>
             </div>
+            <div class="event">
+                <div class="event-left">
+                    <div class="event-date">
+                        <div id="id4">sat2</div>
+                    </div>
+                </div>
+
+                <div class="event-right">
+                    <h3 class="event-title">Junior Zumba</h3>
+                    <div class="event-description">For kids
+                    </div>
+                    <div class="event-timing">
+                        <img src="images/time.png" alt="" /> 7:30 am
+                    </div>
+                </div>
+            </div>
         </div>
+        <script>
+            const tuesday = moment().day(2);
+            const tuesdayFormatted = moment(tuesday).format("dddd MMM Do");
+
+            const nextTuesday = moment().day(9);
+            const nextTuesdayFormatted = moment(nextTuesday).format("dddd MMM Do");
+
+            const saturday = moment().day(6);
+            const saturdayFormatted = moment(saturday).format("dddd MMM Do");
+
+            const nextSaturday = moment().day(13);
+            const nextSaturdayFormatted = moment(nextSaturday ).format("dddd MMM Do");
+
+            const e1 = document.getElementById("id1").innerHTML = tuesdayFormatted
+
+            const e2 = document.getElementById("id2").innerHTML = saturdayFormatted
+
+            const e3 = document.getElementById("id3").innerHTML = nextTuesdayFormatted
+
+            const e4 = document.getElementById("id4").innerHTML = nextSaturdayFormatted;
+        </script>
     </body>
 </html>
