@@ -17,6 +17,14 @@ li a{
   color: black;
   margin: 0 40px;
 }
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
+}
 .navi-list {
 display: flex;
 justify-content: space-between;

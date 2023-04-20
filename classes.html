@@ -31,7 +31,9 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-date">
-                        <div id="id1">tues1</div>
+                        <div class="day" id="t1day">tuesday1</div>
+                        <div class="date" id="t1date">tuesday1</div>
+                        <div class="month" id="t1month">tuesday1</div>
                     </div>
                 </div>
 
@@ -47,7 +49,9 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-date">
-                        <div id="id2">sat1</div>
+                        <div class="day" id="s1day">saturday1</div>
+                        <div class="date" id="s1date">saturday1</div>
+                        <div class="month" id="s1month">saturday1</div>
                     </div>
                 </div>
 
@@ -63,7 +67,9 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-date">
-                        <div id="id3">tues2</div>
+                        <div class="day" id="t2day">tuesday2</div>
+                        <div class="date" id="t2date">tuesday2</div>
+                        <div class="month" id="t2month">tuesday2</div>
                     </div>
                 </div>
 
@@ -79,7 +85,9 @@
             <div class="event">
                 <div class="event-left">
                     <div class="event-date">
-                        <div id="id4">sat2</div>
+                        <div class="day" id="s2day">saturday2</div>
+                        <div class="date" id="s2date">saturday2</div>
+                        <div class="month" id="s2month">saturday2</div>
                     </div>
                 </div>
 
@@ -93,26 +101,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            const tuesday = moment().day(2);
-            const tuesdayFormatted = moment(tuesday).format("dddd MMM Do");
-
-            const nextTuesday = moment().day(9);
-            const nextTuesdayFormatted = moment(nextTuesday).format("dddd MMM Do");
-
-            const saturday = moment().day(6);
-            const saturdayFormatted = moment(saturday).format("dddd MMM Do");
-
-            const nextSaturday = moment().day(13);
-            const nextSaturdayFormatted = moment(nextSaturday ).format("dddd MMM Do");
-
-            const e1 = document.getElementById("id1").innerHTML = tuesdayFormatted
-
-            const e2 = document.getElementById("id2").innerHTML = saturdayFormatted
-
-            const e3 = document.getElementById("id3").innerHTML = nextTuesdayFormatted
-
-            const e4 = document.getElementById("id4").innerHTML = nextSaturdayFormatted;
-        </script>
+        <script type="text/javascript" src="javascript/classes.js"></script>
     </body>
 </html>
